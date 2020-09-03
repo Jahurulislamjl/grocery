@@ -5,6 +5,10 @@ $black: #000000;
 $white: #ffffff;
 
 
+$primaryTextColor: #6b6b6b;
+$secondTextColor: #ffffff;
+
+
 
 // ==============topbar section==============
 
@@ -43,18 +47,17 @@ $white: #ffffff;
             border: 1px solid transparent !important;
 
             &:hover{
-                //background: darken($primaryColor, 10%);
                 border: 1px solid $white !important;
             }
             
             .fa-search{
-                color: $white;
+                color: $secondTextColor;
                 font-size: 18px;
                 display: flex;
                 align-items: center;
             }
             .text{
-                color: $white;
+                color: $secondTextColor;
                 font-size: 18px;
                 display: flex;
                 text-align: center;
@@ -63,5 +66,95 @@ $white: #ffffff;
                 font-weight: 500;
             }
         }
+    }
+
+    .login{
+        display: flex;
+        align-items: center;
+
+        .login-text{
+            font-size: 18px;
+            font-weight: 400;
+            color: $primaryTextColor;
+            margin-bottom: 0;
+            margin-left: 50px;
+            border: 1px solid $primaryColor;
+            padding: 3px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+
+            &:hover{
+                background: $primaryColor;
+                color: $secondTextColor;
+            }
+        }
+    }
+}
+
+
+
+// =========================Header Section=======================
+
+#header{
+    .navbar{
+        .navbar-nav{
+            width: 200px;
+            margin-left: 200px;
+            
+
+
+            .nav-item{
+                position: relative;
+                border: 1px solid transparent;
+
+                .nav-link{
+                    color: $primaryTextColor;
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+
+                .sub-menu{
+                    position: absolute;
+                    list-style: none;
+                    display: none;
+                    width: 200px;
+                    margin-left:199px;
+                    margin-top:-41px;
+                    padding-left: 0 !important;
+
+                    .nav-item{
+                        .sub-sub-menu{
+                            position: absolute;
+                            list-style: none;
+                            display: none;
+                            width: 200px;
+                            margin-left:199px;
+                            margin-top:-41px;
+                            padding-left: 0 !important;
+                        }
+                        &:hover{
+                            border: 1px solid $primaryColor !important;
+                            
+                            .sub-sub-menu{
+                                display: block;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+    
+                &:hover{
+                    border: 1px solid $primaryColor !important;
+                    .sub-menu{
+                        display: block;
+                    }
+                }
+            }
+
+            
+        }
+
+        
     }
 }
