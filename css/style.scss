@@ -12,14 +12,17 @@ $secondTextColor: #ffffff;
 // ===============================Home Pge==================
 
 .section-title{
-    padding: 20px 0;
+    margin: 50px 0;
+    border-top: 2px solid rgba($primaryColor, .6);
     
 }
 .title{
-    display: flex;
-    justify-content: center;
     font-size: 26px;
     color: $primaryTextColor;
+    border: 2px solid rgba($primaryColor, .6);
+    width: 25%;
+    padding: 5px 20px;
+    border-top: none !important;
 }
 .sub-title{
     display: flex;
@@ -31,9 +34,7 @@ $secondTextColor: #ffffff;
 
 #topbar{
     margin-top: 10px;
-    .business-logo{
-       
-    }
+  
 
     .search-box{
         display: flex;
@@ -286,7 +287,83 @@ $secondTextColor: #ffffff;
             }
         }
     }
+
+    // ===================special offer==================
+
+    .special-offers{
+
+        .special-offer-slider{
+            margin: 0 50px;
+            border-left: 5px solid rgba($primaryColor, .6);
+            border-right: 5px solid rgba($primaryColor, .6);
+
+            .image-slide{
+                width: 500px !important;
+                height: 350px ;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 1px 12px -6px #858484;
+
+                .offer-image{
+                    height: 300px ;
+                    margin: 0 !important;
+                    .card{
+                        height: 100% ;
+                        border-radius: 0 ;
+                        border: none;
+
+                        img{
+                            height: 100% ;
+                        }
+                    }
+                }
+
+                .product-card{
+                    border: none;
+                }
+            }
+
+            .slick-prev{
+                height: 60px;
+                width: 60px;
+                z-index: 1;
+                left: -33px !important;
+                border-radius: 100%;
+                border: 5px solid $primaryColor;
+                background: $black;
+            }
+
+            .slick-next{
+                height: 60px;
+                width: 60px;
+                z-index: 1;
+                right: -33px !important;
+                border-radius: 100%;
+                border: 5px solid $primaryColor;
+                background: $black;
+            }
+
+            .slick-prev:before {
+                content: '<<';
+                font-size: 30px;
+                font-weight: 900;
+                color: $white !important;
+            }
+
+            .slick-next:before {
+                content: '>>';
+                font-size: 30px;
+                font-weight: 900;
+                color: $white !important;
+            }
+                
+        }
+    }
+
 }
+
+
+  
 
 // ============product page section===============
 
@@ -296,6 +373,7 @@ $secondTextColor: #ffffff;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+
             .product-card{
                 width: 200px;
                 margin: 10px 0;

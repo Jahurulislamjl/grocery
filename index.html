@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -161,10 +163,9 @@
 
 
   <section id="home-section" class="px-3">
-    
+
     <div class="about-delivery py-3">
-      <div class="section-title">
-        <p class="title">Lorem Ipsum</p>
+      <div class="my-5">
         <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugit.</p>
       </div>
 
@@ -204,7 +205,7 @@
           <div class="section-title">
             <p class="title">Our Product Categories</p>
           </div>
-          
+
           <div class="categorys">
 
             <div class="card">
@@ -311,11 +312,145 @@
       </div>
     </div>
 
+
+
+    <!-- ===============Special offer=============== -->
+
+    <div class="special-offers">
+        <div class="row">
+          <div class="col">
+
+            <div class="section-title">
+              <p class="title">Special Offers</p>
+            </div>
+
+            <div class="special-offer-slider">
+
+              <div class="image-slide">
+                <div class="row">
+
+                  <div class="col-7 offer-image">
+                    <div class="card">
+                      <img class="card-img" src="./image/delivery.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-5">
+                    <div class="card product-card">
+                      <img class="card-img-top" src="./image/brinjal.png" alt="">
+                      <div class="card-body">
+                        <a href="#">big big brinjal</a>
+                        <p>1kg</p>
+                        <div class="price">50 TK</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-slide">
+                <div class="row">
+
+                  <div class="col-7 offer-image">
+                    <div class="card">
+                      <img class="card-img" src="./image/delivery.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-5">
+                    <div class="card product-card">
+                      <img class="card-img-top" src="./image/brinjal.png" alt="">
+                      <div class="card-body">
+                        <a href="#">big big brinjal</a>
+                        <p>1kg</p>
+                        <div class="price">50 TK</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-slide">
+                <div class="row">
+
+                  <div class="col-7 offer-image">
+                    <div class="card">
+                      <img class="card-img" src="./image/delivery.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-5">
+                    <div class="card product-card">
+                      <img class="card-img-top" src="./image/brinjal.png" alt="">
+                      <div class="card-body">
+                        <a href="#">big big brinjal</a>
+                        <p>1kg</p>
+                        <div class="price">50 TK</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="image-slide">
+                <div class="row">
+
+                  <div class="col-7 offer-image">
+                    <div class="card">
+                      <img class="card-img" src="./image/delivery.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-5">
+                    <div class="card product-card">
+                      <img class="card-img-top" src="./image/brinjal.png" alt="">
+                      <div class="card-body">
+                        <a href="#">big big brinjal</a>
+                        <p>1kg</p>
+                        <div class="price">50 TK</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    
+
   </section>
+
 
   <script src="./js/jquery-slim.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+
+      $('.special-offer-slider').slick({
+        dots: true,
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+      });
+
+    });
+  </script>
 </body>
 
 </html>
