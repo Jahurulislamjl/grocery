@@ -854,6 +854,32 @@ $secondTextColor: #ffffff;
 
 // ============product page section===============
 
+.breadcrumb-section{
+    .breadcrumb{
+        background: none;
+        margin-bottom: 0;
+        
+        .breadcrumb-item{
+            .breadcrumb-link{
+                color: $primaryTextColor;
+            }
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: ">";
+        }
+    }
+}
+
+.product-category-title{
+    .category-name{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+
 #product-section{
     padding: 30px;
 
@@ -866,47 +892,97 @@ $secondTextColor: #ffffff;
             flex-wrap: wrap;
 
             .product-card{
-                width: 230px;
-                margin: 10px;
-                padding: 10px;
+                width: 210px;
+                margin: 20px 10px;
+                border: none;
+
+                .product-unit-price{
+                    display: flex;
+                    margin-bottom: 10px;
+                    background: rgba($primaryColor, .3);
+
+                    .product-unit{
+                        flex: 1;
+                        color: $primaryTextColor;
+                        font-size: 20px;
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                    .product-price{
+                        flex: 1;
+                        color: $primaryTextColor;
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-align: center;
+                        margin-bottom: 0;
+                        background: rgba($primaryColor, .1);
+
+                        .price-icon{
+                            font-weight: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
 
                 .product-img{
                     width: 100%;
                     height: 200px;
+                    padding: 5px 10px;
                 }
 
                 .card-body{
                     padding: 0;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     text-align: center;
-                }
 
-                .product-name{
-                    color: $primaryTextColor;
-                    font-size: 16px;
-                    line-height: 1.4;
-                    text-transform: capitalize;
-                }
-                .product-unit{
-                    color: $primaryTextColor;
-                    font-size: 16px;
-                    text-align: center;
-                    margin-bottom: 0;
-                    margin: 10px;
-                }
-                .product-price{
-                    color: $primaryTextColor;
-                    font-size: 20px;
-                    font-weight: 500;
-                    text-align: center;
-                    margin-bottom: 0;
-                    margin: 10px;
-
-                    .price-icon{
-                        font-weight: 0;
+                    .product-name{
+                        color: $primaryTextColor;
                         font-size: 16px;
+                        line-height: 1.4;
+                        padding: 5px;
+                        text-transform: capitalize;
+                    }
+
+                    .product-details{
+                        display: flex;
+                        justify-content: center;
+                        font-size: 18px;
+                        padding: 5px;
+                        margin: 5px 0;
+                        color: rgba($primaryColor, .7);
+                        text-transform: capitalize;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: rgba($primaryColor, .5);
+                        }
+                    }
+
+                    .add-product{
+                        display: flex;
+                        justify-content: center;
+
+                        .add-icon{
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50px;
+                            font-size: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $secondTextColor;
+                            background: rgba($primaryColor, .7);
+                            position: relative;
+
+                            &:hover{
+                                background: rgba($primaryColor, .9);
+                            }
+                        }
                     }
                 }
+
+                
+                
             }
         }
     }

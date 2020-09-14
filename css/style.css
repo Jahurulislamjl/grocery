@@ -1041,6 +1041,25 @@
   content: '*' !important;
 }
 
+.breadcrumb-section .breadcrumb {
+  background: none;
+  margin-bottom: 0;
+}
+
+.breadcrumb-section .breadcrumb .breadcrumb-item .breadcrumb-link {
+  color: #6b6b6b;
+}
+
+.breadcrumb-section .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.product-category-title .category-name {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 #product-section {
   padding: 30px;
 }
@@ -1060,49 +1079,115 @@
 }
 
 #product-section .product-all .product-items .product-card {
-  width: 230px;
-  margin: 10px;
-  padding: 10px;
+  width: 210px;
+  margin: 20px 10px;
+  border: none;
 }
 
-#product-section .product-all .product-items .product-card .product-img {
-  width: 100%;
-  height: 200px;
+#product-section .product-all .product-items .product-card .product-unit-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  background: rgba(255, 129, 38, 0.3);
 }
 
-#product-section .product-all .product-items .product-card .card-body {
-  padding: 0;
-  margin-top: 20px;
-  text-align: center;
-}
-
-#product-section .product-all .product-items .product-card .product-name {
+#product-section .product-all .product-items .product-card .product-unit-price .product-unit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #6b6b6b;
-  font-size: 16px;
-  line-height: 1.4;
-  text-transform: capitalize;
-}
-
-#product-section .product-all .product-items .product-card .product-unit {
-  color: #6b6b6b;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 0;
-  margin: 10px;
 }
 
-#product-section .product-all .product-items .product-card .product-price {
+#product-section .product-all .product-items .product-card .product-unit-price .product-price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #6b6b6b;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 0;
-  margin: 10px;
+  background: rgba(255, 129, 38, 0.1);
 }
 
-#product-section .product-all .product-items .product-card .product-price .price-icon {
+#product-section .product-all .product-items .product-card .product-unit-price .product-price .price-icon {
   font-weight: 0;
   font-size: 16px;
+}
+
+#product-section .product-all .product-items .product-card .product-img {
+  width: 100%;
+  height: 200px;
+  padding: 5px 10px;
+}
+
+#product-section .product-all .product-items .product-card .card-body {
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#product-section .product-all .product-items .product-card .card-body .product-name {
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#product-section .product-all .product-items .product-card .card-body .product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px 0;
+  color: rgba(255, 129, 38, 0.7);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#product-section .product-all .product-items .product-card .card-body .product-details:hover {
+  color: rgba(255, 129, 38, 0.5);
+}
+
+#product-section .product-all .product-items .product-card .card-body .add-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#product-section .product-all .product-items .product-card .card-body .add-product .add-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  background: rgba(255, 129, 38, 0.7);
+  position: relative;
+}
+
+#product-section .product-all .product-items .product-card .card-body .add-product .add-icon:hover {
+  background: rgba(255, 129, 38, 0.9);
 }
 
 #footer-section .footer {
