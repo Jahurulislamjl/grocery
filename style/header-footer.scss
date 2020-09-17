@@ -1,0 +1,366 @@
+@import '_variable';
+// ==============topbar section==============
+#topbar{
+    margin: 10px 0;
+    .search-box{
+        display: flex;
+        border: none;
+        .search-input{
+            flex: 1;
+            border: none;
+            outline: none;
+            height: 45px;
+            padding-left: 20px;
+            background: lighten($black, 96%);
+            border-radius: 3px 0 0 3px;
+            overflow: hidden;
+        }
+        .search{
+            outline: none;
+            border: none;
+            width: 50px;
+            border-radius: 0 3px 3px 0;
+            background: $primaryColor;
+            cursor: pointer;
+            .search-icon{
+                color: $secondTextColor;
+                font-size: 22px;
+            }
+            &:hover{
+                background: $secondaryColor;
+            }
+        }
+    }
+
+    .ellipsis-icon{
+        font-size: 32px;
+        display: none;
+        @media (max-width: 425px) {
+            display: block;
+        }
+    }
+    .topbar-right{
+        .menu{
+            display: flex;
+            align-content: center;
+            height: 45px;
+            border-radius: 3px;
+            background: $primaryColor;
+            margin-left: 20px !important;
+            @media (max-width: 768px) {
+                margin-left: 0 !important;
+            }
+            @media (max-width: 425px) {
+                margin-left: 0 !important;
+                display: none;
+            }
+            .call{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                color: $primaryColor;
+                background: $secondaryColor;
+                cursor: pointer;
+                &:hover{
+                    background: $secondaryColor;
+                }
+                @media (max-width: 768px) {
+                    font-size: 28px;
+                }
+            }
+            .signin{
+                flex: 2;
+                border: none;
+                outline: none;
+                background: none;
+                color: $white;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                &:hover{
+                    color: $secondaryColor;
+                }
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+// =========================Header Section=======================
+#header{
+    display: flex;
+    .navbar{
+        flex: 2;
+        .navbar-nav{
+            width: 200px;
+            margin-left: 280px;
+            z-index: 999;
+
+            @media(max-width: 1024px){
+                margin-left: 170px;
+            }
+
+            @media(max-width: 768px){
+                margin-left: 130px;
+            }
+
+            @media(max-width: 425px){
+                margin-left: 100px;
+            }
+
+            @media(max-width: 375px){
+                margin-left: 80px;
+            }
+            .nav-item{
+                position: relative;
+                border: 1px solid transparent;
+                .nav-link{
+                    color: $primaryTextColor;
+                    font-size: 16px;
+                    margin-left: 5px;
+
+                    .item-icon{
+                        margin-right: 5px;
+                        font-size: 18px;
+                    }
+                }
+                .sub-menu{
+                    list-style: none;
+                    display: none;
+                    width: 200px;
+                    padding-left: 0 !important;
+                    background: lighten($black, 90%);
+                    z-index: 999;
+                    @media(min-width: 768px){
+                        position: absolute;
+                        margin-left:199px;
+                        margin-top:-41px;
+                        width: 170px;
+                    }
+                    .nav-item{
+                        .sub-sub-menu{
+                            list-style: none;
+                            display: none;
+                            width: 200px;
+                            padding-left: 0 !important;
+                            background: lighten($black, 95%);
+                            z-index: 999;
+                            @media(min-width: 768px){
+                                position: absolute;
+                                margin-left:169px;
+                                margin-top:-41px;
+                                width: 170px;
+                            }
+                            .nav-item{
+                                &:hover{
+                                    background: rgba($primaryColor, .1);
+                                }
+                            }
+                        }
+                        &:hover{
+                            background: rgba($primaryColor, .3);
+                            border: none;
+
+                            @media(min-width: 768px){
+                                border: 1px solid $primaryColor !important;
+                                background: none;
+                            }
+                            .sub-sub-menu{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    background: rgba($primaryColor, .6);
+                    border: none;
+                    @media(min-width: 768px){
+                        border: 1px solid $primaryColor !important;
+                        background: none;
+                    }
+                    .sub-menu{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .header-offer{
+        flex: 3;
+        position: relative;
+        padding: 10px 0;
+        .offer-image{
+            width: 70%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            @media (max-width: 768px) {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 425px) {
+            display: none;
+        }
+    }
+}
+// =====================footer section==============
+#footer-section{
+    .footer{
+        background: lighten($black, 10%);
+        padding: 2px 0;
+        .follow-media{
+            margin: 0 2px;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            color: $primaryTextColor;
+            .media-icon{
+                margin: 25px;
+                font-size: 38px;
+                @media (max-width: 425px){
+                    margin: 20px;
+                    font-size: 34px;
+                }
+                @media (max-width: 375px){
+                    margin: 15px;
+                    font-size: 26px;
+                }
+            }
+        }
+        .footer-bottom{
+            padding: 50px;
+            @media (max-width: 375px){
+                padding: 20px;
+            }
+            .footer-link{
+                .category-name{
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 500;
+                    display: flex;
+                    white-space: nowrap;
+                    @media (max-width: 425px){
+                        font-size: 18px;
+                    }
+                }
+                .link-category{
+                    display: flex;
+                    flex-direction: column;
+                    .link{
+                        color: $primaryTextColor;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        @media (max-width: 425px){
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .manual-contact{
+            .contact-number{
+                display: flex;
+                justify-content: center;
+                @media (max-width: 425px){
+                    margin-top: 20px;
+                }
+                .phone-icon{
+                    font-size: 62px;
+                    font-weight: 500;
+                    color: $primaryColor;
+                    display: flex;
+                    align-items: center;
+                    animation: phoneAnimate 2s infinite;
+                    @keyframes phoneAnimate {
+                        0%{color: $white;}
+                        25%{color: lighten($primaryColor, 30%);}
+                        50%{color: lighten($primaryColor, 10%);
+                            transform: rotate(20deg);
+                            }
+                        75%{color: lighten($primaryColor, 5%);}
+                        100%{color: green;}
+                    }
+                    @media (max-width: 768px){
+                        font-size: 56px;
+                    }
+                    @media (max-width: 375px){
+                        font-size: 48px;
+                    }
+                }
+                .number{
+                    font-size: 42px;
+                    font-weight: 500;
+                    color: $white;
+                    margin-left: 20px;
+                    margin-bottom: 0;
+                    display: flex;
+                    white-space: nowrap;
+                    @media (max-width: 375px){
+                        font-size: 28px;
+                    }
+                }
+            }
+            .email-address{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                .email{
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: $white;
+                    @media (max-width: 375px){
+                        font-size: 18px;
+                    }
+                    span{
+                        color: $primaryTextColor;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .pay-roll{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            .pay-text{
+                color: $secondTextColor;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            .pay-img{
+                width: 60px;
+                margin: 0 5px;
+            }
+        }
+        .footer-bottom-bar{
+            padding: 10px 50px;
+            border-top: 1px solid;
+            display: flex;
+
+            .copyright-text{
+                flex: 5;
+                .text{
+                    color: $primaryTextColor;
+                }
+            }
+            .arrow-up{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                .arrow-icon{
+                    color: $primaryColor;
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+}
