@@ -589,8 +589,7 @@
 
             .slick-dots li button:before {
                 font-size: 50px !important;
-                color: $primaryColor !important;  
-                content: '*' !important;
+                color: $primaryColor !important;
             }
         }
     }
@@ -598,7 +597,7 @@
 }
 
 
- 
+
 
 
 // ============product page section===============
@@ -824,7 +823,7 @@
                     align-items: center;
                     font-size: 20px;
                     color: $primaryTextColor;
-                } 
+                }
                 .quyantity{
                     flex: 1;
                     display: flex;
@@ -835,9 +834,8 @@
 
                     .count{
                         margin-bottom: 0;
-                     
                     }
-                } 
+                }
                 .add-icon{
                     flex: 1;
                     display: flex;

@@ -33,7 +33,7 @@
 
 .title {
   font-size: 26px;
-  color: #6b6a6a;
+  color: #575656;
   padding: 5px 20px;
   margin-bottom: 0;
   text-align: center !important;
@@ -69,7 +69,7 @@
 .sub-title {
   text-align: center;
   font-size: 18px;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #settingNbag-section {
@@ -252,7 +252,7 @@
 
 #settingNbag-section .bag-call-section .bag-call .call .call-icon {
   font-size: 30px;
-  color: #6b6a6a;
+  color: #575656;
   background: #ffffff;
   height: 40px;
   width: 40px;
@@ -316,7 +316,7 @@
 
 #settingNbag-section .bag-call-section .bag-call .bag .bag-icon {
   font-size: 42px;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 @media (max-width: 425px) {
@@ -362,7 +362,7 @@
 
 #sub-navbar .navbar .navbar-nav .nav-link {
   list-style: none;
-  color: #6b6a6a;
+  color: #575656;
   font-size: 18px;
   padding: 0 10px !important;
 }
@@ -457,7 +457,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #858383;
+  color: #716f6f;
 }
 
 @media (max-width: 768px) {
@@ -474,7 +474,7 @@
 
 #home-section .product-category .categorys .card .category-name {
   font-size: 16px;
-  color: #6b6a6a;
+  color: #575656;
   text-align: center;
   white-space: nowrap;
   margin-top: 5px;
@@ -688,20 +688,20 @@
 #home-section .clint-opinion .clint-testimonial .testimonial-slide .skew .sub-skew {
   border: 2px solid #ffffff;
   height: 100% !important;
-  background: rgba(107, 106, 106, 0.2);
+  background: rgba(87, 86, 86, 0.2);
 }
 
 #home-section .clint-opinion .clint-testimonial .testimonial-slide .skew .sub-skew .sub-sub-skew {
   height: 100% !important;
   -webkit-transform: skewX(50deg);
           transform: skewX(50deg);
-  background: rgba(107, 106, 106, 0.1);
+  background: rgba(87, 86, 86, 0.1);
 }
 
 #home-section .clint-opinion .clint-testimonial .testimonial-slide .skew .sub-skew2 {
   border: 2px solid #ffffff;
   height: 100% !important;
-  background: rgba(107, 106, 106, 0.1);
+  background: rgba(87, 86, 86, 0.1);
 }
 
 @media (max-width: 425px) {
@@ -731,7 +731,7 @@
 
 #home-section .clint-opinion .clint-testimonial .testimonial-slide .testimonial .testimonial-text {
   font-size: 18px;
-  color: #6b6a6a;
+  color: #575656;
   text-align: justify;
 }
 
@@ -751,7 +751,6 @@
 #home-section .clint-opinion .clint-testimonial .slick-dots li button:before {
   font-size: 50px !important;
   color: #5e0075 !important;
-  content: '*' !important;
 }
 
 .breadcrumb-section .breadcrumb {
@@ -760,7 +759,7 @@
 }
 
 .breadcrumb-section .breadcrumb .breadcrumb-item .breadcrumb-link {
-  color: #6b6a6a;
+  color: #575656;
 }
 
 .breadcrumb-section .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -775,7 +774,7 @@
   font-size: 24px;
   text-align: center;
   margin-bottom: 0;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #product-section {
@@ -814,7 +813,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #6b6a6a;
+  color: #575656;
   font-size: 18px;
   text-align: center;
   margin-bottom: 0;
@@ -824,7 +823,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #6b6a6a;
+  color: #575656;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -850,7 +849,7 @@
 }
 
 #product-section .product-all .product-items .product-card .card-body .product-name {
-  color: #6b6a6a;
+  color: #575656;
   font-size: 16px;
   line-height: 1.4;
   padding: 5px;
@@ -956,17 +955,17 @@
 #product-section .modal .product-details .product-name {
   font-size: 22px;
   text-transform: capitalize;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #product-section .modal .product-details .unit {
   font-size: 18px;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #product-section .modal .product-details .price {
   font-size: 24px;
-  color: #6b6a6a;
+  color: #575656;
   font-weight: 500;
 }
 
@@ -997,7 +996,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #product-section .modal .add-buy .add-quantity .quyantity {
@@ -1035,7 +1034,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  color: #6b6a6a;
+  color: #575656;
 }
 
 #product-section .modal .add-buy .btn {

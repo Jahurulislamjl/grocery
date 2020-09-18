@@ -1,7 +1,7 @@
 @import '_variable';
 // ==============topbar section==============
 #topbar{
-    margin: 10px 0;
+    margin: 15px 0;
     .search-box{
         display: flex;
         border: none;
@@ -40,7 +40,8 @@
         }
     }
     .topbar-right{
-        .menu{
+        position: relative;
+        .topbar-right-menu{
             display: flex;
             align-content: center;
             height: 45px;
@@ -51,8 +52,9 @@
                 margin-left: 0 !important;
             }
             @media (max-width: 425px) {
-                margin-left: 0 !important;
+                position: absolute;
                 display: none;
+                left: -50px;
             }
             .call{
                 flex: 1;
@@ -94,83 +96,91 @@
 }
 // =========================Header Section=======================
 #header{
-    display: flex;
+    position: relative;
+    .header-slider{
+        .slide{
+            height: 350px;
+            width: 100%;
+            position: relative;
+            .slide-img{
+               position: absolute;
+               height: 100%;
+               width: 100%;
+            }
+        }
+        .slick-dots li button:before {
+            transform: translateY(-40px);
+            font-size: 40px !important;
+            color: $white !important;
+        }
+    }
     .navbar{
-        flex: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 110px;
+        z-index: 999;
+        background: $white;
+        padding: 0 !important;
+        border: none;
         .navbar-nav{
+            position: absolute;
+            background: $white;
+            top: 0;
+            bottom: 0;
             width: 200px;
-            margin-left: 280px;
-            z-index: 999;
-
-            @media(max-width: 1024px){
-                margin-left: 170px;
-            }
-
-            @media(max-width: 768px){
-                margin-left: 130px;
-            }
-
-            @media(max-width: 425px){
-                margin-left: 100px;
-            }
-
-            @media(max-width: 375px){
-                margin-left: 80px;
-            }
+            padding: 10px 0;
             .nav-item{
                 position: relative;
-                border: 1px solid transparent;
-                .nav-link{
-                    color: $primaryTextColor;
-                    font-size: 16px;
-                    margin-left: 5px;
-
-                    .item-icon{
-                        margin-right: 5px;
-                        font-size: 18px;
+                .name{
+                    display: flex;
+                    align-items: center;
+                    padding: 3px 10px !important;
+                    .nav-link{
+                        flex: 1;
+                        color: $primaryTextColor;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        padding: 0;
+                    }
+                    .right-arrow{
+                        display: flex;
+                        justify-content: flex-end !important;
+                        font-size: 14px;
+                        display: none;
+                    }
+                    &:hover{
+                        .right-arrow{
+                            display: block;
+                        }
                     }
                 }
                 .sub-menu{
                     list-style: none;
                     display: none;
+                    position: absolute;
+                    left:200px;
+                    top: 0;
                     width: 200px;
-                    padding-left: 0 !important;
-                    background: lighten($black, 90%);
+                    background: $white;
                     z-index: 999;
-                    @media(min-width: 768px){
-                        position: absolute;
-                        margin-left:199px;
-                        margin-top:-41px;
-                        width: 170px;
-                    }
+                    padding: 0;
+                    box-shadow: -2px 0px 10px -8px $boxShadowColor;
                     .nav-item{
                         .sub-sub-menu{
+                            position: absolute;
                             list-style: none;
                             display: none;
                             width: 200px;
-                            padding-left: 0 !important;
-                            background: lighten($black, 95%);
+                            left: 200px;
+                            top: 0;
+                            padding: 0;
                             z-index: 999;
-                            @media(min-width: 768px){
-                                position: absolute;
-                                margin-left:169px;
-                                margin-top:-41px;
-                                width: 170px;
-                            }
-                            .nav-item{
-                                &:hover{
-                                    background: rgba($primaryColor, .1);
-                                }
-                            }
+                            background: $white;
+                            box-shadow: -2px 0px 10px -8px $boxShadowColor;
                         }
                         &:hover{
-                            background: rgba($primaryColor, .3);
                             border: none;
-
-                            @media(min-width: 768px){
-                                border: 1px solid $primaryColor !important;
-                                background: none;
-                            }
                             .sub-sub-menu{
                                 display: block;
                             }
@@ -178,35 +188,13 @@
                     }
                 }
                 &:hover{
-                    background: rgba($primaryColor, .6);
+                    background: linear-gradient(to right, $white, rgba($primaryColor, .3));
                     border: none;
-                    @media(min-width: 768px){
-                        border: 1px solid $primaryColor !important;
-                        background: none;
-                    }
                     .sub-menu{
                         display: block;
                     }
                 }
             }
-        }
-    }
-    .header-offer{
-        flex: 3;
-        position: relative;
-        padding: 10px 0;
-        .offer-image{
-            width: 70%;
-            height: 100%;
-            top: 0;
-            right: 0;
-            @media (max-width: 768px) {
-                width: 60%;
-            }
-        }
-
-        @media (max-width: 425px) {
-            display: none;
         }
     }
 }
