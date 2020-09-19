@@ -13,38 +13,9 @@ $(document).ready(function () {
       slideToShow: 1,
       slideToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
-      responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              //centerPadding: '40px',
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              //centerPadding: '40px',
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 425,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              //centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
+      autoplaySpeed: 5000
     });
-    $('.clint-testimonial').slick({
+    $('.clint-testimonia').slick({
       dots: true,
       infinite: true,
       slideToShow: 1,

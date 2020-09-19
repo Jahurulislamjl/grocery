@@ -162,7 +162,7 @@
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
   font-size: 40px !important;
-  color: #ffffff !important;
+  color: #ffb90a !important;
 }
 
 #header .navbar {
@@ -203,7 +203,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #575656;
+  color: #524a4a;
   font-size: 14px;
   text-transform: capitalize;
   padding: 0;
@@ -284,7 +284,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #575656;
+  color: #524a4a;
 }
 
 #footer-section .footer .follow-media .media-icon {
@@ -343,7 +343,7 @@
 }
 
 #footer-section .footer .footer-bottom .footer-link .link-category .link {
-  color: #575656;
+  color: #524a4a;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -477,7 +477,7 @@
 }
 
 #footer-section .footer .manual-contact .email-address .email span {
-  color: #575656;
+  color: #524a4a;
   margin-right: 10px;
 }
 
@@ -518,7 +518,7 @@
 }
 
 #footer-section .footer .footer-bottom-bar .copyright-text .text {
-  color: #575656;
+  color: #524a4a;
 }
 
 #footer-section .footer .footer-bottom-bar .arrow-up {

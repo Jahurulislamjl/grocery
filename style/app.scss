@@ -1,0 +1,281 @@
+@import '_variable';
+.section-title{
+    border: none;
+    margin: 50px 0;
+}
+.title{
+    flex: 1;
+    font-size: 26px;
+    color: $primaryTextColor;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.sub-title{
+    text-align: center;
+    font-size: 18px;
+    color: $primaryTextColor;
+}
+// ========================home section====================
+#home-section{
+    .about-delivery{
+        .card{
+            margin: 10px 5px;
+            @media (max-width: 425px) {
+                margin: 15px 5px;
+            }
+            .card-body{
+                position: relative;
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                @media(max-width: 1024px){
+                    height: 210px;
+                }
+                .card-img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    // ===================special offer==================
+    .special-offers{
+        .special-offer-slider{
+            margin: 0 100px;
+            padding: 0 20px;
+            @media (max-width: 1024px){
+                margin: 20px;
+            }
+            .slide{
+                height: 300px;
+                width: 450px !important;
+                margin: 20px 40px;
+                padding: 5px;
+                display: flex;
+                border-radius: 5px;
+                border: 1px solid $primaryColor;
+                @media (max-width: 1024px){
+                    margin: 20px 15px;
+                }
+                @media (max-width: 768px){
+                    margin: 20px 20px;
+                }
+                .offer-img{
+                    flex: 3;
+                    position: relative;
+                    display: flex;
+                    align-items: center !important;
+                    margin-right: 2px;
+                    .image{
+                        position: absolute;
+                        width: 100%;
+                    }
+                }
+                .product-card{
+                    flex: 2;
+                    display: flex;
+                    justify-content: center;
+                    .card{
+                        width: 200px;
+                        border: none;
+                        .unit-price{
+                            display: flex;
+                            background: rgba($primaryColor, .3);
+                            .unit{
+                                flex: 1;
+                                color: $secondTextColor;
+                                font-size: 14px;
+                                text-align: center;
+                                margin-bottom: 0;
+                                font-weight: 500;
+                            }
+                            .price{
+                                flex: 1;
+                                color: $secondTextColor;
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-align: center;
+                                margin-bottom: 0;
+                                background: rgba($primaryColor, .3);
+                                .icon{
+                                    font-weight: 0;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .product-img{
+                            width: 100%;
+                            height: 140px;
+                            padding: 5px 30px;
+                        }
+                        .card-body{
+                            padding: 0;
+                            margin-top: 5px;
+                            text-align: center;
+                            .product-name{
+                                color: $primaryTextColor;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                padding: 0 5px;
+                                text-transform: capitalize;
+                            }
+                            .product-details{
+                                padding: 5px;
+                                .details{
+                                    text-align: center;
+                                    font-size: 14px;
+                                    color: rgba($primaryColor, .7);
+                                    text-transform: capitalize;
+                                    cursor: pointer;
+                                    margin-bottom: 0;
+                                    &:hover{
+                                        color: rgba($primaryColor, .5);
+                                    }
+                                }
+                            }
+                            .add-product{
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 5px;
+                                .add-icon{
+                                    height: 35px;
+                                    width: 35px;
+                                    border-radius: 50px;
+                                    font-size: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: $secondTextColor;
+                                    background: rgba($primaryColor, .6);
+                                    position: relative;
+                                    &:hover{
+                                        background: rgba($primaryColor, .9);
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            box-shadow: 0px 0px 12px -8px #858484;
+                        }
+                    }
+                }
+            }
+            .slick-prev {
+                background: $primaryColor;
+                height: 40px;
+                width: 40px;
+                z-index: 1;
+                border-radius: 5px;
+            }
+            .slick-prev:before {
+                content: '←';
+            }
+            .slick-next {
+                background: $primaryColor;
+                height: 40px;
+                width: 40px;
+                z-index: 1;
+                border-radius: 5px;
+            }
+            .slick-dots li button:before {
+                font-size: 40px !important;
+                color: $primaryColor !important;
+            }
+        }
+    }
+    // ====================client opinion section=================
+    .client-opinion{
+        margin-top: 100px !important;
+        .client-testimonial{
+            padding: 5px;
+            @media (max-width: 768px){
+                padding: 5px 5px;
+            }
+            .testimonial-slide{
+                box-shadow: 0px 1px 12px -6px #858484;
+                padding: 0 51px;
+                margin: 20px 10px;
+                height: 204px;
+                @media (max-width: 425px){
+                    height: 280px;
+                }
+                .client-image{
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+
+                    @media (max-width: 768px){
+                    }
+                    img{
+                        width: 150px;
+                        @media (max-width: 425px){
+                            width: 120px;
+                        }
+                    }
+                }
+                .skew{
+                    transform: skewX(20deg);
+                    padding: 20px;
+                    overflow: hidden;
+                    border: none !important;
+                    box-shadow: -2px 0px 12px -8px #858484;
+                    background: rgba($primaryColor, .4);
+                    .sub-skew{
+                        border:2px solid $white;
+                        height: 100% !important;
+                        background: rgba($primaryTextColor, .2);
+                        .sub-sub-skew{
+                            height: 100% !important;
+                            transform: skewX(50deg);
+                            background: rgba($primaryTextColor, .1);
+                        }
+                    }
+                    .sub-skew2{
+                        border:2px solid $white;
+                        height: 100% !important;
+                        background: rgba($primaryTextColor, .1);
+                    }
+                }
+                @media (max-width: 425px){
+                    .skew{
+                        display: none !important;
+                    }
+                }
+                .testimonial{
+                    display: flex;
+                    align-items: center;
+                    padding: 0 50px ;
+                    @media (max-width: 425px){
+                       padding: 0 10px !important;
+                       align-items: flex-start;
+                    }
+                    .testimonial-text{
+                        font-size: 18px;
+                        color: $primaryTextColor;
+                        text-align: justify;
+                        @media (max-width: 768px){
+                            font-size: 16px;
+                        }
+                        @media (max-width: 425px){
+                            font-size: 14px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            .slick-dots li button:before {
+                font-size: 50px !important;
+                color: $primaryColor !important;
+            }
+        }
+    }
+}
+
+
+
+
