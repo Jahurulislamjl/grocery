@@ -17,6 +17,12 @@
     font-size: 18px;
     color: $primaryTextColor;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block !important;
+}
 // ========================home section====================
 #home-section{
     .about-delivery{
@@ -169,7 +175,7 @@
                 background: $primaryColor;
                 height: 40px;
                 width: 40px;
-                z-index: 1;
+                //z-index: 1;
                 border-radius: 5px;
             }
             .slick-prev:before {
@@ -179,7 +185,7 @@
                 background: $primaryColor;
                 height: 40px;
                 width: 40px;
-                z-index: 1;
+                //z-index: 1;
                 border-radius: 5px;
             }
             .slick-dots li button:before {
@@ -190,81 +196,44 @@
     }
     // ====================client opinion section=================
     .client-opinion{
-        margin-top: 100px !important;
+        margin: 100px 0 !important;
+        background: rgba($black,.1);
         .client-testimonial{
-            padding: 5px;
-            @media (max-width: 768px){
-                padding: 5px 5px;
-            }
+            margin: 0 100px;
             .testimonial-slide{
-                box-shadow: 0px 1px 12px -6px #858484;
-                padding: 0 51px;
-                margin: 20px 10px;
-                height: 204px;
-                @media (max-width: 425px){
-                    height: 280px;
-                }
-                .client-image{
+                padding: 10px;
+                height: 200px;
+                .client-info{
+                    padding: 10px;
                     display: flex;
                     justify-content: center;
-                    padding: 10px 0;
-
-                    @media (max-width: 768px){
-                    }
-                    img{
-                        width: 150px;
-                        @media (max-width: 425px){
-                            width: 120px;
+                    flex-direction: column;
+                    .client-image{
+                        display: flex;
+                        justify-content: center;
+                        .image{
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 100%;
+                            border: 2px solid rgba($primaryColor,.2);
                         }
                     }
-                }
-                .skew{
-                    transform: skewX(20deg);
-                    padding: 20px;
-                    overflow: hidden;
-                    border: none !important;
-                    box-shadow: -2px 0px 12px -8px #858484;
-                    background: rgba($primaryColor, .4);
-                    .sub-skew{
-                        border:2px solid $white;
-                        height: 100% !important;
-                        background: rgba($primaryTextColor, .2);
-                        .sub-sub-skew{
-                            height: 100% !important;
-                            transform: skewX(50deg);
-                            background: rgba($primaryTextColor, .1);
-                        }
-                    }
-                    .sub-skew2{
-                        border:2px solid $white;
-                        height: 100% !important;
-                        background: rgba($primaryTextColor, .1);
-                    }
-                }
-                @media (max-width: 425px){
-                    .skew{
-                        display: none !important;
+                    .name{
+                        margin-bottom: 0;
+                        text-align: center;
+                        font-size: 18px;
+                        text-transform: capitalize;
                     }
                 }
                 .testimonial{
                     display: flex;
                     align-items: center;
-                    padding: 0 50px ;
-                    @media (max-width: 425px){
-                       padding: 0 10px !important;
-                       align-items: flex-start;
-                    }
-                    .testimonial-text{
-                        font-size: 18px;
+                    .text{
+                        font-size: 16px;
                         color: $primaryTextColor;
-                        text-align: justify;
-                        @media (max-width: 768px){
-                            font-size: 16px;
-                        }
-                        @media (max-width: 425px){
-                            font-size: 14px;
-                            text-align: left;
-                        }
+                        border: 1px solid;
+                        padding: 10px;
+                        background: rgba($black,.1);
                     }
                 }
             }
