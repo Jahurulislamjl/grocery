@@ -17,7 +17,7 @@ $(document).ready(function () {
     autoplaySpeed: 5000
   });
 
-  $('.clint-testimonia').slick({
+  $('.client-testimonial').slick({
     dots: true,
     infinite: true,
     slideToShow: 1,
@@ -50,17 +50,24 @@ $(document).ready(function () {
     }
   });
 
-
-  // $(".active-category").hover(function(){
-  //   $(".navbar-nav").addClass('navbar-nav-menu')},function(){$(".navbar-nav").removeClass('navbar-nav-menu');
-  //   });
-
   $(".all-category").click(function () {
     $(".navbar-nav").toggleClass('navbar-nav-menu')
   });
 
-});
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 700) {
+      $(".pick-up-icon").css({
+        "visibility": "visible"
+      });
+    } else {
+      $(".pick-up-icon").css({
+        "visibility": "hidden"
+      });
+    }
+  });
 
-// $(".active-category").hover(function(){
-//   $(".navbar-nav").prependTo(".active-category").show();
-//   },function(){$(".navbar-nav").hide();})
+  $(".pick-up-icon").click( function() {
+    $(window).scrollTop(0);
+  });
+
+});

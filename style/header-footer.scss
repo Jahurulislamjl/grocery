@@ -159,6 +159,9 @@ body {
             height: 350px;
             width: 100%;
             position: relative;
+            @media (max-width: 425px) {
+                height: 300px;
+            }
             .slide-img{
                position: absolute;
                height: 100%;
@@ -173,12 +176,18 @@ body {
     }
     .navbar{
         position: absolute;
-        top: 0;
+        top: 0 !important;
         bottom: 0;
         left: 110px;
         background: $white;
         padding: 0 !important;
         border: none;
+        @media (max-width: 768px) {
+            left: 40px;
+        }
+        @media (max-width: 425px) {
+            left: 10px;
+        }
         .navbar-nav{
             position: absolute;
             background: $white;
@@ -186,6 +195,10 @@ body {
             bottom: 0;
             width: 200px;
             padding: 10px 0;
+            @media (max-width: 425px) {
+                width: 150px;
+                overflow-y: auto;
+            }
             .nav-item{
                 position: relative;
                 .name{
@@ -204,10 +217,16 @@ body {
                         justify-content: flex-end !important;
                         font-size: 14px;
                         display: none;
+                        @media (max-width: 425px) {
+                            display: block;
+                        }
                     }
                     &:hover{
                         .right-arrow{
                             display: block;
+                            @media (max-width: 425px) {
+                                transform: rotate(90deg);
+                            }
                         }
                     }
                 }
@@ -222,6 +241,14 @@ body {
                     z-index: 999;
                     padding: 0;
                     box-shadow: -2px 0px 10px -8px $boxShadowColor;
+                    @media (max-width: 425px) {
+                        width: 150px;
+                        left:150px;
+                        position: unset;
+                        background: lighten($black, 80%);
+                        box-shadow: none;
+                        z-index: 0;
+                    }
                     .nav-item{
                         .sub-sub-menu{
                             position: absolute;
@@ -234,6 +261,14 @@ body {
                             z-index: 999;
                             background: $white;
                             box-shadow: -2px 0px 10px -8px $boxShadowColor;
+                            @media (max-width: 425px) {
+                                width: 150px;
+                                left:150px;
+                                position: unset;
+                                background: lighten($black, 90%);
+                                box-shadow: none;
+                                z-index: 0;
+                            }
                         }
                         &:hover{
                             border: none;
@@ -278,13 +313,16 @@ body {
                 }
             }
         }
-        .footer-info{
+        .company-info{
             padding: 50px;
             margin: 0 !important;
-            @media (max-width: 375px){
+            @media (max-width: 768px){
                 padding: 20px;
             }
-            .footer-link{
+            .info-category{
+                @media (max-width: 768px){
+                    padding: 0 5px;
+                }
                 .category-name{
                     color: $white;
                     font-size: 22px;
@@ -295,7 +333,7 @@ body {
                         font-size: 18px;
                     }
                 }
-                .link-category{
+                .info-link{
                     display: flex;
                     flex-direction: column;
                     .link{
@@ -318,37 +356,25 @@ body {
                     margin-top: 20px;
                 }
                 .phone-icon{
-                    font-size: 62px;
+                    font-size: 44px;
                     font-weight: 500;
-                    color: $primaryColor;
+                    color: $secondaryColor;
                     display: flex;
                     align-items: center;
-                    animation: phoneAnimate 2s infinite;
-                    @keyframes phoneAnimate {
-                        0%{color: $white;}
-                        25%{color: lighten($primaryColor, 30%);}
-                        50%{color: lighten($primaryColor, 10%);
-                            transform: rotate(20deg);
-                            }
-                        75%{color: lighten($primaryColor, 5%);}
-                        100%{color: green;}
-                    }
+                    transform: rotate(-30deg);
                     @media (max-width: 768px){
-                        font-size: 56px;
-                    }
-                    @media (max-width: 375px){
-                        font-size: 48px;
+                        font-size: 36px;
                     }
                 }
                 .number{
-                    font-size: 42px;
+                    font-size: 34px;
                     font-weight: 500;
                     color: $white;
                     margin-left: 20px;
                     margin-bottom: 0;
                     display: flex;
                     white-space: nowrap;
-                    @media (max-width: 375px){
+                    @media (max-width: 768px){
                         font-size: 28px;
                     }
                 }
@@ -361,7 +387,7 @@ body {
                     font-size: 22px;
                     font-weight: 500;
                     color: $white;
-                    @media (max-width: 375px){
+                    @media (max-width: 768px){
                         font-size: 18px;
                     }
                     span{
@@ -371,40 +397,56 @@ body {
                 }
             }
         }
-        .pay-roll{
+        .payment-info{
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            .pay-text{
+            .title{
                 color: $secondTextColor;
                 font-size: 18px;
                 font-weight: 500;
                 margin-bottom: 0;
             }
-            .pay-img{
-                width: 60px;
-                margin: 0 5px;
+            .payment-via{
+                display: flex;
+                flex: 1;
+                .pay-img{
+                    width: 60px;
+                    margin: 0 5px;
+                }
             }
         }
-        .footer-bottom-bar{
+        .footer-bottom{
             padding: 10px 50px;
             border-top: 1px solid;
             display: flex;
             margin: 0 !important;
 
-            .copyright-text{
+            .copyright{
                 flex: 5;
                 .text{
                     color: $primaryTextColor;
                 }
             }
-            .arrow-up{
+            .pick-up{
+                position: relative;
                 flex: 1;
                 display: flex;
                 justify-content: flex-end;
-                .arrow-icon{
+                .pick-up-icon{
+                    position: fixed;
                     color: $primaryColor;
-                    font-size: 42px;
+                    font-size: 26px;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    border-radius: 5px;
+                    background: rgba($secondaryColor, .7);
+                    z-index: 999;
+                    bottom: 50px;
+                    visibility: hidden;
                 }
             }
         }
