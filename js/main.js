@@ -84,15 +84,15 @@ $(document).ready(function () {
 
 // ===============need tabs==================
 function openTab(evt, tabName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("tab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
   }
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " tab-active";
+  evt.currentTarget.className += " tab-active";
 }

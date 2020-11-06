@@ -1,27 +1,33 @@
-.tab-active {
-  border-color: #f44336 !important;
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
-.bottombar {
-  border-bottom: 2px solid transparent;
+.tab .tablink {
+  background-color: inherit;
+  float: left;
+  border-bottom: 2px solid transparent !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-.help-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+.tab .tablink:hover {
+  background-color: #ddd;
 }
 
-.help-nav .tablink {
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 5px 15px;
+.tab .tab-active {
+  border-bottom: 2px solid red !important;
 }
 
-.help-nav .tablink:hover {
-  background: rgba(0, 0, 0, 0.1);
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 /*# sourceMappingURL=help.css.map */

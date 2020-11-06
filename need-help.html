@@ -228,67 +228,22 @@
     </nav>
   </section>
   <section id="need-help-tab">
-    <div class="help">
-      <div class="help-nav">
-        <div class="row">
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'faq');">
-           FAQ
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'ourStory');">
-           our story
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'team');">
-           team
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'career');">
-           career
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'contactUs');">
-           contact us
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'privacyPolicy');">
-           privacy policy
-          </a>
-          <a href="javascript:void(0)" class="tablink bottombar"
-           onclick="openTab(event, 'termsUse');">
-           terms of use
-          </a>
-        </div>
-      </div>
-      <div id="faq" class="w3-container tab" style="display:none">
-        <h2>faq</h2>
-        <p>London is the capital city of England.</p>
-      </div>
-      <div id="ourStory" class="w3-container tab" style="display:none">
-        <h2>our story</h2>
-        <p>Paris is the capital of France.</p>
-      </div>
-      <div id="team" class="w3-container tab" style="display:none">
-        <h2>team</h2>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-      <div id="career" class="w3-container tab" style="display:none">
-        <h2>career</h2>
-        <p>career is the capital of Japan.</p>
-      </div>
-      <div id="contactUs" class="w3-container tab" style="display:none">
-        <h2>contact us</h2>
-        <p>contact is the capital of Japan.</p>
-      </div>
-      <div id="privacyPolicy" class="w3-container tab" style="display:none">
-        <h2>privacy policy</h2>
-        <p>privacy policy is the capital of Japan.</p>
-      </div>
-      <div id="termsUse" class="w3-container tab" style="display:none">
-        <h2>terms of use</h2>
-        <p>terms is the capital of Japan.</p>
-      </div>
+    <div class="tab">
+      <button class="tablink" onclick="openTab(event, 'London')">London</button>
+      <button class="tablink" onclick="openTab(event, 'Paris')">Paris</button>
+      <button class="tablink" onclick="openTab(event, 'Tokyo')">Tokyo</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
     </div>
   </section>
   <script src="./js/jquery-slim.min.js"></script>
