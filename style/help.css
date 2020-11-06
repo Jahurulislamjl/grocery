@@ -1,0 +1,27 @@
+.tab-active {
+  border-color: #f44336 !important;
+}
+
+.bottombar {
+  border-bottom: 2px solid transparent;
+}
+
+.help-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.help-nav .tablink {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 5px 15px;
+}
+
+.help-nav .tablink:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=help.css.map */

@@ -835,7 +835,6 @@ html {
   background: rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0px 0px 14px 5px #858484;
           box-shadow: 0px 0px 14px 5px #858484;
-  display: none;
 }
 
 @media (max-width: 425px) {
@@ -1000,7 +999,9 @@ html {
   height: 89%;
   width: 320px;
   bottom: 0;
-  right: 0;
+  right: -450px;
+  -webkit-transition: right .2s linear;
+  transition: right .2s linear;
   z-index: 1000;
   -webkit-box-shadow: -2px 1px 12px -2px #858484;
           box-shadow: -2px 1px 12px -2px #858484;
@@ -1077,7 +1078,7 @@ html {
   margin-left: 5px;
 }
 
-#order-chart .chart .chart-bag .close {
+#order-chart .chart .chart-bag .chart-close {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
@@ -1089,7 +1090,7 @@ html {
           justify-content: flex-end;
 }
 
-#order-chart .chart .chart-bag .close .btn {
+#order-chart .chart .chart-bag .chart-close .btn {
   border-radius: 0;
   padding: 0 10px;
   background: none;

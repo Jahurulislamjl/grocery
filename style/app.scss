@@ -582,6 +582,7 @@ html {
     }
 }
 
+// ===========================product order chart==================
 #order-chart{
     .shoping-bag{
         position: fixed;
@@ -595,7 +596,6 @@ html {
         cursor: pointer;
         background: rgba($black, .6);
         box-shadow: 0px 0px 14px 5px $boxShadowColor;
-        display: none;
         @media (max-width: 425px) {
             right: 0;
             bottom: 0;
@@ -673,6 +673,7 @@ html {
             }
         }
     }
+// ===========================chart===================
     .chart{
         position: relative;
         position: fixed;
@@ -680,10 +681,10 @@ html {
         height: 89%;
         width: 320px;
         bottom: 0;
-        right: 0;
+        right: -450px;
+        transition: right .2s linear;
         z-index: 1000;
         box-shadow: -2px 1px 12px -2px $boxShadowColor;
-        //display: none;
         @media (max-width: 425px) {
             width: 100%;
         }
@@ -722,12 +723,11 @@ html {
                     margin-left: 5px;
                 }
             }
-            .close{
+            .chart-close{
                 flex: 4;
                 display: flex;
                 justify-content: flex-end;
                 .btn{
-                    //height: 20px;
                     border-radius: 0;
                     padding: 0 10px;
                     background: none;

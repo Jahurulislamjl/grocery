@@ -34,12 +34,12 @@ $(document).ready(function () {
     }
     )
   });
-// =====================topbar=====================
+ // =====================topbar=====================
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-      $("#topbar").addClass('topbar-shadow');
+      $(".topbar").addClass('topbar-shadow');
     } else {
-      $("#topbar").removeClass('topbar-shadow');
+      $(".topbar").removeClass('topbar-shadow');
     }
 
     if ($(document).scrollTop() > 350) {
@@ -69,5 +69,30 @@ $(document).ready(function () {
   $(".pick-up-icon").click( function() {
     $(window).scrollTop(0);
   });
-
+ // ========================================product order chart==========
+  $(".shoping-bag").click( function() {
+    $(".chart").css({
+      "right": "0"
+    });
+  });
+  $(".chart-close").click( function() {
+    $(".chart").css({
+      "right": "-450px"
+    });
+  });
 });
+
+// ===============need tabs==================
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " tab-active";
+}

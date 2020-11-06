@@ -1,0 +1,20 @@
+@import '_variable';
+// ============tab============
+.tab-active{
+    border-color: #f44336!important;
+}
+.bottombar{
+    border-bottom: 2px solid transparent;
+}
+.help-nav{
+    display: flex;
+    justify-content: center !important;
+    .tablink{
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 5px 15px;
+        &:hover{
+            background: rgba($black, .1);
+        }
+    }
+}
