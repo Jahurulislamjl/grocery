@@ -1,8 +1,21 @@
 @import '_variable';
+// ============help header======
+.help-header{
+    #header{
+        .header-slider{
+            display: none !important;
+        }
+        .topbar-bottom{
+            display: block !important;
+        }
+    }
+}
 // ============tab============
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
     .tablink {
         background-color: inherit;
         float: left;

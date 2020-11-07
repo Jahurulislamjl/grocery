@@ -54,6 +54,12 @@ $(document).ready(function () {
     $(".navbar-nav").toggleClass('navbar-nav-menu')
   });
 
+//   $('body').click(function() {
+//     $(".navbar-nav").css({
+//       "display": "none"
+//     });
+//  });
+
   $(window).scroll(function() {
     if ($(document).scrollTop() > 700) {
       $(".pick-up-icon").css({

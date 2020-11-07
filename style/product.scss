@@ -39,15 +39,34 @@
     }
     .product{
         padding: 20px 0;
+        margin: 0 20px;
         .product-items{
             display: flex;
-            justify-content: space-around;
+            justify-content: left;
             flex-wrap: wrap;
             .product-card{
-                width: 210px;
-                margin: 20px 10px;
+                width: 175px;
+                margin: 20px 0;
+                margin-left: 10px;
                 border: none;
                 border: 1px solid transparent;
+                @media (max-width: 1024px) {
+                    margin-left: 18px !important;
+                }
+                @media (max-width: 768px) {
+                    margin-left: 7px !important;
+                }
+                @media (max-width: 425px) {
+                    margin-left: 13px !important;
+                }
+                @media (max-width: 375px) {
+                    margin-left: 5px !important;
+                    width: 162px !important;
+                }
+                @media (max-width: 320px) {
+                    margin-left: 5px !important;
+                    width: 135px !important;
+                }
                 .unit-price{
                     display: flex;
                     margin-bottom: 10px;
@@ -76,8 +95,14 @@
                 }
                 .product-img{
                     width: 100%;
-                    height: 180px;
+                    height: 150px;
                     padding: 5px 20px;
+                    @media (max-width: 375px) {
+                        height: 130px !important;
+                    }
+                    @media (max-width: 320px) {
+                        height: 100px !important;
+                    }
                 }
                 .card-body{
                     position: relative;
