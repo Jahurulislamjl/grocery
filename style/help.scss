@@ -19,7 +19,7 @@
     .tablink {
         background-color: inherit;
         float: left;
-        border-bottom: 2px solid transparent !important;
+        border-bottom: 3px solid $primaryColor !important;
         border: none;
         outline: none;
         cursor: pointer;
@@ -31,7 +31,7 @@
         }
     }
     .tab-active {
-        border-bottom: 2px solid red !important;
+        border-bottom-color:  $secondaryColor !important;
       }
   }
   .tabcontent {
