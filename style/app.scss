@@ -86,126 +86,155 @@ html {
     }
     // ===================special offer==================
     .special-offers{
-        .special-offer-slider{
-            margin: 0 100px;
-            padding: 0 20px;
-            @media (max-width: 1024px){
-                margin: 20px;
+        .slide{
+            width: 200px !important;
+            height: 320px !important;
+            margin: 20px;
+            //border: 1px solid red;
+        }
+        .product-card{
+            width: 175px;
+            margin: 20px 0;
+            margin-left: 10px;
+            border: none;
+            border: 1px solid transparent;
+            @media (max-width: 1024px) {
+                margin-left: 18px !important;
             }
-            .slide{
-                height: 300px;
-                width: 450px !important;
-                margin: 20px 40px;
-                padding: 5px;
+            @media (max-width: 768px) {
+                margin-left: 7px !important;
+            }
+            @media (max-width: 425px) {
+                margin-left: 13px !important;
+            }
+            @media (max-width: 375px) {
+                margin-left: 5px !important;
+                width: 162px !important;
+            }
+            @media (max-width: 320px) {
+                margin-left: 5px !important;
+                width: 135px !important;
+            }
+            .unit-price{
                 display: flex;
-                border-radius: 5px;
-                border: 1px solid $primaryColor;
-                @media (max-width: 1024px){
-                    margin: 20px 15px;
+                margin-bottom: 10px;
+                background: rgba($secondaryColor, .5);
+                border-radius: 5px 5px 0 0;
+                .unit{
+                    flex: 1;
+                    color: $primaryTextColor;
+                    font-size: 18px;
+                    text-align: center;
+                    margin-bottom: 0;
                 }
-                @media (max-width: 768px){
-                    margin: 20px 20px;
-                }
-                .offer-img{
-                    flex: 3;
-                    position: relative;
-                    display: flex;
-                    align-items: center !important;
-                    margin-right: 2px;
-                    .image{
-                        position: absolute;
-                        width: 100%;
-                    }
-                }
-                .product-card{
-                    flex: 2;
-                    display: flex;
-                    justify-content: center;
-                    .card{
-                        width: 200px;
-                        border: none;
-                        .unit-price{
-                            display: flex;
-                            background: rgba($primaryColor, .3);
-                            .unit{
-                                flex: 1;
-                                color: $secondTextColor;
-                                font-size: 14px;
-                                text-align: center;
-                                margin-bottom: 0;
-                                font-weight: 500;
-                            }
-                            .price{
-                                flex: 1;
-                                color: $secondTextColor;
-                                font-size: 14px;
-                                font-weight: 500;
-                                text-align: center;
-                                margin-bottom: 0;
-                                background: rgba($primaryColor, .3);
-                                .icon{
-                                    font-weight: 0;
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-                        .product-img{
-                            width: 100%;
-                            height: 140px;
-                            padding: 5px 30px;
-                        }
-                        .card-body{
-                            padding: 0;
-                            margin-top: 5px;
-                            text-align: center;
-                            .product-name{
-                                color: $primaryTextColor;
-                                font-size: 14px;
-                                line-height: 1.2;
-                                padding: 0 5px;
-                                text-transform: capitalize;
-                            }
-                            .product-details{
-                                padding: 5px;
-                                .details{
-                                    text-align: center;
-                                    font-size: 14px;
-                                    color: rgba($primaryColor, .7);
-                                    text-transform: capitalize;
-                                    cursor: pointer;
-                                    margin-bottom: 0;
-                                    &:hover{
-                                        color: rgba($primaryColor, .5);
-                                    }
-                                }
-                            }
-                            .add-product{
-                                display: flex;
-                                justify-content: center;
-                                margin-bottom: 5px;
-                                .add-icon{
-                                    height: 35px;
-                                    width: 35px;
-                                    border-radius: 50px;
-                                    font-size: 20px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    color: $secondTextColor;
-                                    background: rgba($primaryColor, .6);
-                                    position: relative;
-                                    &:hover{
-                                        background: rgba($primaryColor, .9);
-                                    }
-                                }
-                            }
-                        }
-                        &:hover{
-                            box-shadow: 0px 0px 12px -8px #858484;
-                        }
+                .price{
+                    flex: 1;
+                    color: $primaryTextColor;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-bottom: 0;
+                    background: rgba($secondaryColor, .4);
+                    .icon{
+                        font-weight: 0;
+                        font-size: 14px;
                     }
                 }
             }
+            .product-img{
+                width: 100%;
+                height: 150px;
+                padding: 5px 20px;
+                @media (max-width: 375px) {
+                    height: 130px !important;
+                }
+                @media (max-width: 320px) {
+                    height: 100px !important;
+                }
+            }
+            .card-body{
+                position: relative;
+                padding: 0;
+                text-align: center;
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    background: rgba($black, .7);
+                    visibility: hidden;
+                    .add-to-bag{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        font-size: 22px;
+                        padding: 10px;
+                        display: flex;
+                        color: $secondTextColor;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                    .product-details{
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        .details{
+                            text-align: center;
+                            font-size: 14px;
+                            cursor: pointer;
+                            margin-bottom: 0;
+                            text-transform: capitalize;
+                            background: rgba($primaryColor, .7);
+                            color: $secondTextColor;
+                            padding: 2px;
+                            &:hover{
+                                background: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+                .product-name{
+                    color: $primaryTextColor;
+                    font-size: 16px;
+                    line-height: 1.4;
+                    padding: 5px;
+                    margin: 5px 0;
+                    text-transform: capitalize;
+                }
+                &:hover{
+                    .overlay{
+                        visibility: visible;
+                    }
+                }
+            }
+            .add-product{
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+                .add-icon{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50px;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $secondTextColor;
+                    background: rgba($secondaryColor, .9);
+                    position: relative;
+                    &:hover{
+                        background: rgba($primaryColor, .9);
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: 0px 0px 12px -8px #858484;
+                border: 1px solid $primaryColor;
+            }
+        }
             .slick-prev {
                 background: $primaryColor;
                 height: 40px;
@@ -225,7 +254,6 @@ html {
                 font-size: 40px !important;
                 color: $primaryColor !important;
             }
-        }
     }
     // ====================client opinion section=================
     .client-opinion{
@@ -330,6 +358,7 @@ html {
 // ===========================product order chart==================
 #order-chart{
     .shoping-bag{
+        position: relative;
         position: fixed;
         right: 2px;
         bottom: 250px;
@@ -347,6 +376,13 @@ html {
             flex-direction: row;
             width: 100%;
             height: 35px;
+        }
+        .bbag{
+            position: absolute;
+            width: 80px;
+            right: 0;
+            top: 0;
+            z-index: -1;
         }
         .bag{
             font-size: 32px;

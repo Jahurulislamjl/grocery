@@ -8,15 +8,6 @@ $(document).ready(function () {
     autoplaySpeed: 2000
   });
 
-  $('.special-offer-slider').slick({
-    dots: true,
-    infinite: true,
-    slideToShow: 1,
-    slideToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000
-  });
-
   $('.client-testimonial').slick({
     dots: true,
     infinite: true,
@@ -49,17 +40,20 @@ $(document).ready(function () {
       $(".navbar-nav").removeClass('navbar-nav-menu');
     }
   });
-
+// ====================login section=====================
+$(".login-with-email").click(function () {
+  $(".using-phoneNo").addClass('hide');
+  $(".using-email").addClass('show');
+});
+$(".login-with-number").click(function () {
+  $(".using-email").removeClass('show');
+  $(".using-phoneNo").removeClass('hide');
+});
+// ================all category menu=====================
   $(".all-category").click(function () {
     $(".navbar-nav").toggleClass('navbar-nav-menu')
   });
-
-//   $('body').click(function() {
-//     $(".navbar-nav").css({
-//       "display": "none"
-//     });
-//  });
-
+// =================pick up scroll=======================
   $(window).scroll(function() {
     if ($(document).scrollTop() > 700) {
       $(".pick-up-icon").css({
@@ -75,7 +69,7 @@ $(document).ready(function () {
   $(".pick-up-icon").click( function() {
     $(window).scrollTop(0);
   });
- // ========================================product order chart==========
+ // ================product order chart===================
   $(".shoping-bag").click( function() {
     $(".chart").css({
       "right": "0"
@@ -88,7 +82,7 @@ $(document).ready(function () {
   });
 });
 
-// ===============need tabs==================
+// ===============need help and product tabs==================
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
