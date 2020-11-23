@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   $('[data-toggle="tooltip"]').tooltip();
 
-  $(".ellipsis-icon").click(function () {
+  $(".menu-icon").click(function () {
     $(".topbar-right-menu").toggle({
       "display": "block"
     }

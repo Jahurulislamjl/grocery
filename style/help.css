@@ -8,7 +8,7 @@
 
 .tab {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +27,37 @@
   padding: 14px 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  text-transform: capitalize;
 }
 
 .tab .tablink:hover {
-  background-color: #ddd;
+  background-color: #d9d9d9;
+}
+
+@media (max-width: 425px) {
+  .tab .tablink {
+    padding: 5px !important;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tab .tablink {
+    padding: 5px !important;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tab .tablink {
+    padding: 4px !important;
+    font-size: 9px;
+  }
 }
 
 .tab .tab-active {
@@ -41,7 +67,29 @@
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #f2f2f2;
   border-top: none;
+}
+
+#need-help-tab {
+  margin-top: 25px;
+}
+
+#need-help-tab .header-image {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab .header-image {
+    height: 150px;
+  }
+}
+
+#need-help-tab .header-image .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=help.css.map */

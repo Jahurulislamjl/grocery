@@ -5,40 +5,48 @@ body {
   }
 .topbar-shadow{
     box-shadow: 0px -2px 18px 2px $boxShadowColor;
-    //padding-top: 15px !important;
 }
 // ================Header Section==============
 .navbar-nav-menu{
     position: fixed !important;
-    top:104 !important;
+    top:104px !important;
     bottom: auto !important;
     z-index: 1000 !important;
     box-shadow: 0px 0px 12px -8px $boxShadowColor;
+    @media (max-width: 425px) {
+        top:95px !important;
+    }
 }
 #header{
-    margin-top: 80px !important;
+    margin-top: 70px !important;
     position: relative;
     overflow: hidden;
     .topbar{
-        padding: 10px 0;
+        padding: 10px 20px;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1;
         background: $white;
         .business-logo{
-            border: 1px solid red;
+            //border: 1px solid red;
             height: 50px;
             width: 100%;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: 425px) {
+                height: 40px;
+            }
             .logo{
                 position: absolute;
-                width: 50%;
+                width: 70%;
                 height: 100%;
                 top: 0;
+                @media (max-width: 425px) {
+                    width: 100%;
+                }
             }
         }
         .search-box{
@@ -53,8 +61,8 @@ body {
                 background: lighten($black, 96%);
                 border-radius: 3px 0 0 3px;
                 overflow: hidden;
-                @media (max-width: 768px) {
-                    height: 35px;
+                @media (max-width: 425px) {
+                    height: 40px;
                 }
             }
             .search{
@@ -81,7 +89,6 @@ body {
                 height: 45px;
                 border-radius: 3px;
                 background: $primaryColor;
-                margin-left: 20px !important;
                 z-index: 999;
                 @media (max-width: 768px) {
                     margin-left: 0 !important;
@@ -136,7 +143,7 @@ body {
                 padding: 0 !important;
                 padding-left: 5px !important;
             }
-            .ellipsis-icon{
+            .menu-icon{
                 font-size: 28px;
                 display: none;
                 margin-top: 5px;
@@ -149,12 +156,20 @@ body {
             cursor: pointer;
             border-radius: 50px;
             margin-top: 10px;
-            margin-left: 20px;
+            margin-left: 40px;
             display: none;
+            @media (max-width: 1024px) {
+                margin-left: 35px;
+            }
+            @media (max-width: 768px) {
+                margin-left: 25px;
+            }
+            @media (max-width: 425px) {
+                margin-left: 5px;
+            }
             .all-category{
                 position: relative;
                 margin-bottom: 0;
-                padding: 0 10px;
                 text-transform: capitalize;
                 color: $primaryTextColor;
                 font-weight: 500;
@@ -170,6 +185,7 @@ body {
         }
     }
     .header-slider{
+        margin-bottom: 0 !important;
         .slide{
             height: 350px;
             width: 100%;
@@ -192,13 +208,16 @@ body {
     .navbar{
         position: absolute;
         top: 0 !important;
-        bottom: 30;
-        left: 110px;
+        bottom: 0;
+        left: 45px;
         background: $white;
         padding: 0 !important;
         border: none;
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             left: 40px;
+        }
+        @media (max-width: 768px) {
+            left: 30px;
         }
         @media (max-width: 425px) {
             left: 10px;
@@ -210,9 +229,12 @@ body {
             bottom: 0;
             width: 200px;
             padding: 10px 0;
+            overflow-y: auto;
+            @media (max-width: 768px){
+                width: 170px;
+            }
             @media (max-width: 425px){
                 width: 150px;
-                overflow-y: auto;
             }
             .nav-item{
                 position: relative;
