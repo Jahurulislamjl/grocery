@@ -57,11 +57,11 @@ $(".login-with-number").click(function () {
   $(window).scroll(function() {
     if ($(document).scrollTop() > 700) {
       $(".pick-up-icon").css({
-        "visibility": "visible"
+        "display": "block"
       });
     } else {
       $(".pick-up-icon").css({
-        "visibility": "hidden"
+        "display": "none"
       });
     }
   });

@@ -361,7 +361,7 @@ html {
   margin: 50px 0 !important;
   padding-top: 20px;
   padding-bottom: 40px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #fafafa;
 }
 
 .client-opinion .client-testimonial {
@@ -411,6 +411,12 @@ html {
           flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+  .client-opinion .client-testimonial .testimonial-slide .client-info {
+    left: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   .client-opinion .client-testimonial .testimonial-slide .client-info {
     left: 300px;
@@ -439,7 +445,7 @@ html {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  border: 2px solid rgba(255, 214, 112, 0.5);
+  border: 3px solid rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 425px) {
@@ -465,8 +471,7 @@ html {
   margin-top: 30px;
   padding-top: 60px;
   height: 150px;
-  background: rgba(255, 214, 112, 0.3);
-  border: 1px solid rgba(255, 214, 112, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 425px) {
@@ -498,7 +503,7 @@ html {
 
 .client-opinion .client-testimonial .slick-dots li button:before {
   font-size: 40px !important;
-  color: #FFD670 !important;
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .client-opinion .client-testimonial .slick-next {

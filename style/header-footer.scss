@@ -256,7 +256,6 @@ body {
             bottom: 0;
             width: 200px;
             padding: 10px 0;
-            overflow-y: auto;
             @media (max-width: 768px){
                 width: 170px;
             }
@@ -265,10 +264,25 @@ body {
             }
             .nav-item{
                 position: relative;
+                &:hover{
+                    background: lighten($primaryColor, 10%);
+                    border: none;
+                    .sub-menu{
+                        display: block;
+                    }
+                }
                 .item-name{
                     display: flex;
                     align-items: center;
                     padding: 3px 10px !important;
+                    &:hover{
+                        .right-arrow{
+                            display: block;
+                            @media (max-width: 425px) {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
                     .nav-link{
                         flex: 1;
                         color: $secondaryColor;
@@ -281,16 +295,9 @@ body {
                         justify-content: flex-end !important;
                         font-size: 14px;
                         display: none;
+                        color: $secondaryColor;
                         @media (max-width: 425px) {
                             display: block;
-                        }
-                    }
-                    &:hover{
-                        .right-arrow{
-                            display: block;
-                            @media (max-width: 425px) {
-                                transform: rotate(90deg);
-                            }
                         }
                     }
                 }
@@ -302,19 +309,21 @@ body {
                     top: 0;
                     width: 200px;
                     background: rgba($black, .9);
-                    z-index: 999;
                     padding: 0;
                     box-shadow: -2px 0px 10px -8px $boxShadowColor;
-                    .nav-link{
-                        color: $secondaryColor !important;
-                    }
                     @media (max-width: 425px) {
                         width: 150px;
                         left:150px;
                         position: unset;
-                        background: lighten($black, 80%);
+                        background: lighten($black, 70%);
                         box-shadow: none;
                         z-index: 0;
+                    }
+                    @media (max-width: 768px) {
+                        left:169px;
+                    }
+                    .nav-link{
+                        color: $secondaryColor !important;
                     }
                     .nav-item{
                         .sub-sub-menu{
@@ -325,14 +334,13 @@ body {
                             left: 200px;
                             top: 0;
                             padding: 0;
-                            z-index: 999;
                             background: rgba($black, .9);
                             box-shadow: -2px 0px 10px -8px $boxShadowColor;
                             @media (max-width: 425px) {
                                 width: 150px;
                                 left:150px;
                                 position: unset;
-                                background: lighten($black, 90%);
+                                background: lighten($black, 60%);
                                 box-shadow: none;
                                 z-index: 0;
                             }
@@ -345,20 +353,7 @@ body {
                             .sub-sub-menu{
                                 display: block;
                             }
-                            .nav-link{
-                                color:  $primaryTextColor !important;
-                            }
                         }
-                    }
-                }
-                &:hover{
-                    background: linear-gradient(to right, $white, rgba($primaryColor, .3));
-                    border: none;
-                    .sub-menu{
-                        display: block;
-                    }
-                    .nav-link{
-                        color: $primaryTextColor;
                     }
                 }
             }
@@ -375,10 +370,16 @@ body {
             background: $white;
             display: flex;
             justify-content: center;
-            color: $primaryTextColor;
+            .media-link{
+                color: $primaryTextColor;
+                text-decoration: none;
+            }
             .media-icon{
                 margin: 25px;
                 font-size: 38px;
+                &:hover{
+                    color: darken($secondaryColor, 30%);
+                }
                 @media (max-width: 425px){
                     margin: 20px;
                     font-size: 34px;
@@ -390,10 +391,10 @@ body {
             }
         }
         .company-info{
-            padding: 50px;
+            padding: 20px;
             margin: 0 !important;
             @media (max-width: 768px){
-                padding: 20px;
+                padding: 10px;
             }
             .info-category{
                 @media (max-width: 768px){
@@ -404,9 +405,15 @@ body {
                     font-size: 22px;
                     font-weight: 500;
                     display: flex;
-                    white-space: nowrap;
-                    @media (max-width: 425px){
+                    //white-space: nowrap;
+                    @media (max-width: 768px){
                         font-size: 18px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 16px;
+                    }
+                    @media (max-width: 320px){
+                        font-size: 14px;
                     }
                 }
                 .info-link{
@@ -417,8 +424,14 @@ body {
                         font-size: 18px;
                         font-weight: 500;
                         margin-bottom: 10px;
-                        @media (max-width: 425px){
+                        @media (max-width: 768px){
                             font-size: 16px;
+                        }
+                        @media (max-width: 425px){
+                            font-size: 14px;
+                        }
+                        @media (max-width: 320px){
+                            font-size: 12px;
                         }
                     }
                 }
@@ -439,7 +452,7 @@ body {
                     align-items: center;
                     transform: rotate(-30deg);
                     @media (max-width: 768px){
-                        font-size: 36px;
+                        font-size: 32px;
                     }
                 }
                 .number{
@@ -451,20 +464,23 @@ body {
                     display: flex;
                     white-space: nowrap;
                     @media (max-width: 768px){
-                        font-size: 28px;
+                        font-size: 24px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 22px;
                     }
                 }
             }
             .email-address{
-                display: flex;
-                justify-content: center;
                 margin-top: 10px;
                 .email{
+                    display: flex;
+                    justify-content: center;
                     font-size: 22px;
                     font-weight: 500;
                     color: $white;
                     @media (max-width: 768px){
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     span{
                         color: $primaryTextColor;
@@ -476,27 +492,33 @@ body {
         .payment-info{
             margin-top: 20px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             .title{
                 color: $secondTextColor;
                 font-size: 18px;
                 font-weight: 500;
-                margin-bottom: 0;
+                text-transform: capitalize;
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
             .payment-via{
                 display: flex;
                 flex: 1;
+                justify-content: center;
                 .pay-img{
                     width: 50px;
                     margin: 0 5px;
                     @media (max-width: 768px) {
                         margin: 0 2px;
+                        width: 45px;
                     }
                 }
             }
         }
         .footer-bottom{
-            padding: 10px 50px;
+            padding: 10px 30px;
             border-top: 1px solid;
             display: flex;
             margin: 0 !important;
@@ -514,20 +536,15 @@ body {
                 justify-content: flex-end;
                 .pick-up-icon{
                     position: fixed;
-                    color: $primaryColor;
-                    font-size: 26px;
-                    height: 40px;
-                    width: 40px;
-                    display: flex;
-                    justify-content: center !important;
-                    align-items: center !important;
-                    border-radius: 5px;
-                    background: rgba($secondaryColor, .7);
+                    color: darken($secondaryColor, 20%);
+                    font-size: 50px;
+                    font-weight: 500;
                     z-index: 999;
                     bottom: 50px;
-                    visibility: hidden;
-                    @media (max-width: 768px) {
-                        right: 20px;
+                    display: none;
+                    @media (max-width: 425px) {
+                        right: 30px;
+                        font-size: 40px;
                     }
                 }
             }
