@@ -14,7 +14,7 @@ body {
     z-index: 1000 !important;
     box-shadow: 0px 0px 12px -8px $boxShadowColor;
     @media (max-width: 425px) {
-        top:95px !important;
+        top:94px !important;
     }
 }
 #header{
@@ -83,16 +83,18 @@ body {
         }
         .topbar-right{
             position: relative;
+            display: flex;
+            justify-content: center;
             .topbar-right-menu{
                 display: flex;
                 align-content: center;
                 height: 45px;
+                width: 100%;
                 border-radius: 3px;
                 background: $primaryColor;
                 z-index: 999;
                 @media (max-width: 768px) {
-                    margin-left: 0 !important;
-                    height: 35px;
+                    margin-right: 0 !important;
                 }
                 @media (max-width: 425px) {
                     position: absolute;
@@ -107,33 +109,54 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 32px;
+                    font-size: 16px;
+                    padding: 0 5px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    text-transform: capitalize;
                     color: $primaryColor;
                     background: $secondaryColor;
                     cursor: pointer;
+                    white-space: nowrap;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: $secondaryColor;
                         background: $primaryTextColor;
                     }
-                    @media (max-width: 768px) {
+                    .fa{
                         font-size: 22px;
+                        @media (max-width: 425px) {
+                            display: none;
+                        }
+                    }
+                    .name{
+                        margin-left: 5px;
+                        @media (width: 768px) {
+                            display: none;
+                        }
                     }
                 }
                 .signin{
-                    flex: 2;
-                    border: none;
-                    outline: none;
+                    flex: 1;
                     background: none;
                     color: $white;
-                    font-size: 20px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: flex;
+                    margin-bottom: 0;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: capitalize;
                     cursor: pointer;
-                    text-align: center;
                     white-space: nowrap;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: $secondaryColor;
-                    }
-                    @media (max-width: 768px) {
-                        font-size: 18px;
+                        background: $primaryTextColor;
                     }
                 }
             }
@@ -144,7 +167,7 @@ body {
                 padding-left: 5px !important;
             }
             .menu-icon{
-                font-size: 28px;
+                font-size: 36px;
                 display: none;
                 margin-top: 5px;
                 @media (max-width: 425px) {
@@ -166,6 +189,7 @@ body {
             }
             @media (max-width: 425px) {
                 margin-left: 5px;
+                display: block;
             }
             .all-category{
                 position: relative;
@@ -186,11 +210,14 @@ body {
     }
     .header-slider{
         margin-bottom: 0 !important;
+        @media (max-width: 425px) {
+            display: none;
+        }
         .slide{
             height: 350px;
             width: 100%;
             position: relative;
-            @media (max-width: 425px) {
+            @media (max-width: 768px) {
                 height: 300px;
             }
             .slide-img{
@@ -238,7 +265,7 @@ body {
             }
             .nav-item{
                 position: relative;
-                .name{
+                .item-name{
                     display: flex;
                     align-items: center;
                     padding: 3px 10px !important;
