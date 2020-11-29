@@ -8,7 +8,7 @@
 
 .tab {
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,23 +20,24 @@
 .tab .tablink {
   background-color: inherit;
   float: left;
-  border-bottom: 3px solid #5e0075 !important;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 5px 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 16px;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
   text-transform: capitalize;
+  border-bottom: 4px solid #FFD670 !important;
 }
 
 .tab .tablink:hover {
-  background-color: #d9d9d9;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 425px) {
@@ -61,18 +62,57 @@
 }
 
 .tab .tab-active {
-  border-bottom-color: #FFD670 !important;
+  border-bottom-color: black !important;
 }
 
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #f2f2f2;
   border-top: none;
 }
 
 #need-help-tab {
+  position: relative;
   margin-top: 25px;
+}
+
+#need-help-tab .tab {
+  position: absolute;
+  top: 312px;
+  left: 350px;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  #need-help-tab .tab {
+    left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  #need-help-tab .tab {
+    left: 55px;
+  }
+}
+
+@media (max-width: 425px) {
+  #need-help-tab .tab {
+    left: 10px;
+    top: 118px;
+  }
+}
+
+@media (max-width: 375px) {
+  #need-help-tab .tab {
+    left: 35px;
+    top: 125px;
+  }
+}
+
+@media (max-width: 320px) {
+  #need-help-tab .tab {
+    left: 7px;
+  }
 }
 
 #need-help-tab .header-image {
@@ -91,5 +131,233 @@
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+#need-help-tab .content-title {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #524a4a;
+  margin: 30px 0;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab .content-title {
+    font-size: 20px;
+  }
+}
+
+#need-help-tab .heading {
+  font-size: 18px;
+  color: #524a4a;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab .heading {
+    font-size: 16px;
+  }
+}
+
+#need-help-tab .descriotion {
+  font-size: 16px;
+  color: #524a4a;
+  margin: 20px 0;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab .descriotion {
+    font-size: 14px;
+  }
+}
+
+#need-help-tab #contactUs .contact-form {
+  padding: 10px 0;
+  margin-right: 50px;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab #contactUs .contact-form {
+    margin-right: 0;
+    padding: 10px !important;
+  }
+}
+
+#need-help-tab #contactUs .contact-form input {
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #524a4a;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 5px;
+}
+
+#need-help-tab #contactUs .contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #524a4a;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 5px;
+}
+
+#need-help-tab #contactUs .contact-form .form-submit {
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  background: #5e0075;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+#need-help-tab #contactUs .contact-form .form-submit:hover {
+  background: #FFD670;
+  color: #524a4a;
+}
+
+#need-help-tab #contactUs .location {
+  padding: 20px 10px;
+}
+
+#need-help-tab #faq .card {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin: 15px 0;
+  -webkit-box-shadow: 0 2px 20px -12px #858484;
+          box-shadow: 0 2px 20px -12px #858484;
+}
+
+#need-help-tab #faq .card .card-header {
+  background: #9b00c2;
+  border-radius: 0;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border-left: 10px solid #FFD670;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab #faq .card .card-header {
+    font-size: 16px;
+    border-left: 5px solid #FFD670;
+  }
+}
+
+#need-help-tab #faq .card .card-body {
+  border-radius: 0;
+  font-size: 16px;
+  color: #524a4a;
+  border-left: 10px solid #FFD670;
+}
+
+@media (max-width: 425px) {
+  #need-help-tab #faq .card .card-body {
+    font-size: 14px;
+    border-left: 5px solid #FFD670;
+  }
+}
+
+#need-help-tab #team .team-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#need-help-tab #team .team-member .member {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  width: 250px;
+  padding: 10px;
+  margin: 80px 40px;
+  border: 2px solid #f3c2ff;
+  -webkit-box-shadow: 0 2px 20px -12px #858484;
+          box-shadow: 0 2px 20px -12px #858484;
+}
+
+@media (max-width: 1024px) {
+  #need-help-tab #team .team-member .member {
+    margin: 80px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #need-help-tab #team .team-member .member {
+    margin: 80px 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #need-help-tab #team .team-member .member {
+    margin: 80px 55px;
+  }
+}
+
+@media (max-width: 375px) {
+  #need-help-tab #team .team-member .member {
+    margin: 80px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  #need-help-tab #team .team-member .member {
+    margin: 80px 10px;
+  }
+}
+
+#need-help-tab #team .team-member .member .person-image {
+  position: absolute;
+  left: 60px;
+  top: -100px;
+  height: 130px;
+  width: 130px;
+}
+
+#need-help-tab #team .team-member .member .person-image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #f3c2ff;
+}
+
+#need-help-tab #team .team-member .member .person-details {
+  margin-top: 25px;
+}
+
+#need-help-tab #team .team-member .member .person-details .name {
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  color: #524a4a;
+}
+
+#need-help-tab #team .team-member .member .person-details .designation {
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #524a4a;
 }
 /*# sourceMappingURL=help.css.map */
