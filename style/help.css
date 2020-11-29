@@ -33,7 +33,7 @@
   display: flex;
   white-space: nowrap;
   text-transform: capitalize;
-  border-bottom: 4px solid #FFD670 !important;
+  border-bottom: 4px solid #000000 !important;
 }
 
 .tab .tablink:hover {
@@ -62,7 +62,7 @@
 }
 
 .tab .tab-active {
-  border-bottom-color: black !important;
+  border-bottom-color: #FFD670 !important;
 }
 
 .tabcontent {

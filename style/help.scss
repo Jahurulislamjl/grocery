@@ -29,7 +29,7 @@
         display: flex;
         white-space: nowrap;
         text-transform: capitalize;
-        border-bottom: 4px solid $secondaryColor !important;
+        border-bottom: 4px solid $black !important;
         &:hover {
             background: rgba($black, .5);
         }
@@ -47,7 +47,7 @@
         }
     }
     .tab-active {
-        border-bottom-color:  black !important;
+        border-bottom-color: $secondaryColor !important;
       }
   }
   .tabcontent {
