@@ -281,6 +281,7 @@
       <button class="tablink tab-active" onclick="openTab(event, 'topSales')">top sales</button>
       <button class="tablink" onclick="openTab(event, 'newArrival')">new arrival</button>
       <button class="tablink" onclick="openTab(event, 'flashSales')">flash sales</button>
+      <button class="tablink" onclick="openTab(event, 'superOffer')">super offer</button>
     </div>
     <div class="product-container">
       <div id="topSales" class="tabcontent" style="display:block">
@@ -514,16 +515,16 @@
         <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                   <div class="product-image">
                     <img src="./image/tomato.png" class="image" alt="">
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
+                <div class="col-12 col-md-6">
                   <div class="product-details">
                     <p class="product-name">
                       Lorem ipsum dolor sit amet consectetur elit lasdji jdffh
@@ -536,7 +537,7 @@
                   </div>
                   <div class="buy">
                     <div class="row">
-                      <div class="col-md-8">
+                      <div class="col-md-7">
                         <div class="add-quantity">
                           <div class="sub-icon">
                             <i class="fa fa-minus icon" aria-hidden="true"></i>
@@ -549,8 +550,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <button class="btn">Buy Now</button>
+                      <div class="col-md-5">
+                        <button class="buy-btn">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -604,6 +605,7 @@
           </div>
         </div>
       </div>
+      <!-- =============new arrival============= -->
       <div id="newArrival" class="tabcontent">
         <div class="product">
           <div class="section-title">
@@ -835,16 +837,16 @@
         <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                   <div class="product-image">
                     <img src="./image/tomato.png" class="image" alt="">
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
+                <div class="col-12 col-md-6">
                   <div class="product-details">
                     <p class="product-name">
                       Lorem ipsum dolor sit amet consectetur elit lasdji jdffh
@@ -857,7 +859,7 @@
                   </div>
                   <div class="buy">
                     <div class="row">
-                      <div class="col-md-8">
+                      <div class="col-md-7">
                         <div class="add-quantity">
                           <div class="sub-icon">
                             <i class="fa fa-minus icon" aria-hidden="true"></i>
@@ -870,8 +872,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <button class="btn">Buy Now</button>
+                      <div class="col-md-5">
+                        <button class="buy-btn">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -925,6 +927,7 @@
           </div>
         </div>
       </div>
+      <!-- ===============flash sale============= -->
       <div id="flashSales" class="tabcontent">
         <div class="product">
           <div class="section-title">
@@ -1156,16 +1159,16 @@
         <div class="modal" id="myModal">
           <div class="modal-dialog">
             <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-12 col-md-6">
                   <div class="product-image">
                     <img src="./image/tomato.png" class="image" alt="">
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <button type="button" class="close" data-dismiss="modal">
-                    &times;
-                  </button>
+                <div class="col-12 col-md-6">
                   <div class="product-details">
                     <p class="product-name">
                       Lorem ipsum dolor sit amet consectetur elit lasdji jdffh
@@ -1178,7 +1181,7 @@
                   </div>
                   <div class="buy">
                     <div class="row">
-                      <div class="col-md-8">
+                      <div class="col-md-7">
                         <div class="add-quantity">
                           <div class="sub-icon">
                             <i class="fa fa-minus icon" aria-hidden="true"></i>
@@ -1191,8 +1194,257 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <button class="btn">Buy Now</button>
+                      <div class="col-md-5">
+                        <button class="buy-btn">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-description">
+                    <hr>
+                    <p class="text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi nesciunt atque ab
+                      rerum est, iusto error tempora minima consequuntur sit? Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Laborum, quisquam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col daily-need">
+                  <p class="title">daily needs</p>
+                  <hr>
+                  <div class="products">
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/oil.png" class="card-img-top image" alt="">
+                      <p class="name">Soyabin oil 5kg</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                    <div class="card">
+                      <img src="./image/noodles.jpg" class="card-img-top image" alt="">
+                      <p class="name">maggi noodles 5pcs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ==================super offer========= -->
+      <div id="superOffer" class="tabcontent">
+        <div class="product">
+          <div class="section-title">
+            <div class="row">
+              <div class="col-2 col-md-4">
+                <hr>
+              </div>
+              <div class="col-8 col-md-4">
+                <p class="title">super offer</p>
+              </div>
+              <div class="col-2 col-md-4">
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offer-product">
+              <div class="offer">
+                <div class="offer-image">
+                  <img src="./image/offer/offer-img (3).jpg" class="image" alt="">
+                </div>
+              </div>
+              <div class="product-section">
+                <div class="product-items">
+                  <div class="card product-card">
+                    <div class="card-body">
+                      <div class="unit-price">
+                        <p class="unit">1kg</p>
+                        <p class="price">
+                          <i class="fa fa-usd icon" aria-hidden="true"></i>
+                          50
+                        </p>
+                      </div>
+                      <img class="card-img-top product-img" src="./image/banana.png" alt="">
+                      <a href="#" class="product-name">ipsum dolor sit amet elit atque qui</a>
+                      <div class="overlay">
+                        <p class="add-to-bag">Add to Bag</p>
+                        <div class="product-details">
+                          <p class="details" data-toggle="modal" data-target="#myModal">Details >></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-product">
+                      <i class="fa fa-cart-plus add-icon" data-toggle="tooltip" title="Add to bag" aria-hidden="true">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-product">
+              <div class="offer">
+                <div class="offer-image">
+                  <img src="./image/offer/offer-img (3).jpg" class="image" alt="">
+                </div>
+              </div>
+              <div class="product-section">
+                <div class="product-items">
+                  <div class="card product-card">
+                    <div class="card-body">
+                      <div class="unit-price">
+                        <p class="unit">1kg</p>
+                        <p class="price">
+                          <i class="fa fa-usd icon" aria-hidden="true"></i>
+                          50
+                        </p>
+                      </div>
+                      <img class="card-img-top product-img" src="./image/banana.png" alt="">
+                      <a href="#" class="product-name">ipsum dolor sit amet elit atque qui</a>
+                      <div class="overlay">
+                        <p class="add-to-bag">Add to Bag</p>
+                        <div class="product-details">
+                          <p class="details" data-toggle="modal" data-target="#myModal">Details >></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-product">
+                      <i class="fa fa-cart-plus add-icon" data-toggle="tooltip" title="Add to bag" aria-hidden="true">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-product">
+              <div class="offer">
+                <div class="offer-image">
+                  <img src="./image/offer/offer-img (3).jpg" class="image" alt="">
+                </div>
+              </div>
+              <div class="product-section">
+                <div class="product-items">
+                  <div class="card product-card">
+                    <div class="card-body">
+                      <div class="unit-price">
+                        <p class="unit">1kg</p>
+                        <p class="price">
+                          <i class="fa fa-usd icon" aria-hidden="true"></i>
+                          50
+                        </p>
+                      </div>
+                      <img class="card-img-top product-img" src="./image/banana.png" alt="">
+                      <a href="#" class="product-name">ipsum dolor sit amet elit atque qui</a>
+                      <div class="overlay">
+                        <p class="add-to-bag">Add to Bag</p>
+                        <div class="product-details">
+                          <p class="details" data-toggle="modal" data-target="#myModal">Details >></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-product">
+                      <i class="fa fa-cart-plus add-icon" data-toggle="tooltip" title="Add to bag" aria-hidden="true">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-product">
+              <div class="offer">
+                <div class="offer-image">
+                  <img src="./image/offer/offer-img (3).jpg" class="image" alt="">
+                </div>
+              </div>
+              <div class="product-section">
+                <div class="product-items">
+                  <div class="card product-card">
+                    <div class="card-body">
+                      <div class="unit-price">
+                        <p class="unit">1kg</p>
+                        <p class="price">
+                          <i class="fa fa-usd icon" aria-hidden="true"></i>
+                          50
+                        </p>
+                      </div>
+                      <img class="card-img-top product-img" src="./image/banana.png" alt="">
+                      <a href="#" class="product-name">ipsum dolor sit amet elit atque qui</a>
+                      <div class="overlay">
+                        <p class="add-to-bag">Add to Bag</p>
+                        <div class="product-details">
+                          <p class="details" data-toggle="modal" data-target="#myModal">Details >></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-product">
+                      <i class="fa fa-cart-plus add-icon" data-toggle="tooltip" title="Add to bag" aria-hidden="true">
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="product-image">
+                    <img src="./image/tomato.png" class="image" alt="">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="product-details">
+                    <p class="product-name">
+                      Lorem ipsum dolor sit amet consectetur elit lasdji jdffh
+                    </p>
+                    <p class="unit">1kg</p>
+                    <p class="price">
+                      <i class="fa fa-usd price-icon" aria-hidden="true"></i>
+                      100
+                    </p>
+                  </div>
+                  <div class="buy">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="add-quantity">
+                          <div class="sub-icon">
+                            <i class="fa fa-minus icon" aria-hidden="true"></i>
+                          </div>
+                          <div class="quantity">
+                            <p class="count">0</p>
+                          </div>
+                          <div class="add-icon">
+                            <i class="fa fa-plus icon" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <button class="buy-btn">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -1315,38 +1567,6 @@
     </div>
   </div>
   </section>
-  <!-- ===============about delivary========== -->
-  <div class="about-delivery py-3">
-    <div class="my-5">
-      <p class="sub-title">
-        Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Ut, fugit.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="./image/delivery.jpg" class="card-img" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="./image/delivery.jpg" class="card-img" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="./image/delivery.jpg" class="card-img" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- ======================order chart======================== -->
   <section id="order-chart">
     <div class="shoping-bag">
