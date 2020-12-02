@@ -263,6 +263,7 @@
 .modal .modal-dialog {
   max-width: 1000px !important;
   margin: auto !important;
+  margin-top: 30px !important;
 }
 
 @media (max-width: 1024px) {
